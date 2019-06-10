@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const axios = require('axios');
-const url = "http://0.0.0.0:4444";
+const url = "http://www.thavalon.com";
 const help = (message, args) => {
     message.channel.send("Help recieved")
 };
@@ -37,6 +37,7 @@ function createGame(message, args) {
                     data.forEach(ele => {
                         const user = message.channel.members.find(i => i.nickname === ele.name || i.displayName === ele.name) ;
                         if (user) {
+                            user.send("~~~~~~~~~~~~~~ NEW GAME ~~~~~~~~~~~~~~");
                             user.send("You are " + ele.role);
                             user.send(ele.description);
                             let infoString = "";
