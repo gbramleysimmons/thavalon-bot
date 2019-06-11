@@ -1,6 +1,27 @@
 # thavalon-bot
+An opensource discord bot for the game THavalon, using the THavalon REST API. 
 
-To run: npm install && node thavalon-bot.js, with a thavalon-reborn server running on localhost:/4444
+Uses discord.js to interact with the Discord API.
 
-Pull the thavalon-reborn server from https://github.com/KaushikRaghuNimmagadda/thavalon-reborn
+Currently deployed to an EC2 instance. Please use a different client secret to test. 
+
+
+
+**To Run**
+
+Make sure you have node v12.4.0 installed.
+
+Run 
+````
+npm install 
+````
+
+to load the js dependencies, and 
+
+```aidl
+node thavalon_bot.js
+```
+
+to run the bot.
+
 
